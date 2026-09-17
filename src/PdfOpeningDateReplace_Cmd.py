@@ -264,6 +264,18 @@ REPLACEMENTS = (
         OLD_GENERAL_SCHEDULE_TEXT,
         NEW_GENERAL_SCHEDULE_LINES,
     ),
+    ReplacementSpec(
+        "受付開始日",
+        RECEPTION_START_PAGE_INDEX,
+        OLD_RECEPTION_START_TEXT,
+        (NEW_RECEPTION_START_TEXT,),
+    ),
+    ReplacementSpec(
+        "パソコン推奨注意書き",
+        COMPUTER_NOTE_PAGE_INDEX,
+        OLD_COMPUTER_NOTE_TEXT,
+        (NEW_COMPUTER_NOTE_TEXT,),
+    ),
 )
 
 # 受講必需品・開催場所のブロックは4ページ目に残し、募集期間の3行だけを移す。
