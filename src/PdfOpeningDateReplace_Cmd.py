@@ -2991,7 +2991,6 @@ def main(argv: Sequence[str] | None = None) -> int:
         moves = description_plan.moves + prepare_following_line_moves(
             pymupdf, doc, prepared
         )
-        information_moves = prepare_information_moves(pymupdf, doc)
         snapshot = snapshot_document(doc)
 
         doc, information_moves = apply_replacements_then_prepare_information_moves(
